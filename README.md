@@ -92,6 +92,13 @@ Assign a privileges for the application to write in a various folders
 chown -R www-data:www-data /var/www
 ```
 
+## Run
+
+Open your new, fresh, simple, wonderful configuration repository of your FortiGate devices.
+```sh
+http://yourserveripaddress/
+```
+
 ## Development
 
 Want to contribute? Great!
