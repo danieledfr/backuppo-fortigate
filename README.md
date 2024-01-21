@@ -22,8 +22,8 @@ I appreciate if someone want to introduce new features, fixing or something else
 
 Anyway, if you have the same needs to me, just download and use it!
 
-![Home Page](/screenshot/backuppo-1.jpg?raw=true "Main Page")
-![Device Manage](/screenshot/backuppo-2.jpg?raw=true "Device Page")
+![Home Page](/screenshot/backuppo-1.png?raw=true "Main Page")
+![Device Manage](/screenshot/backuppo-2.png?raw=true "Device Page")
 
 
 ## Tech
