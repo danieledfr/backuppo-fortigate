@@ -16,7 +16,7 @@ Few things to keep in mind:
 - Schedule a cron to plan when to do the backup. ( Daily, Weekly or Monthly )
 - Download the last backupped configuration
 - View the job's log
-- All the features are able to do through web interface
+- All the features are able to do done through web interface
 
 I appreciate if someone wants to introduce new features, fixing or something else...
 
