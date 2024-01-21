@@ -1,0 +1,89 @@
+body {
+    margin-top: 20px;
+  }
+#devices-table {
+    margin-bottom: 120px;
+}
+  .navbar {
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 30px;
+  }
+  .navbar-nav .nav-link {
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar-toggler {
+    transition: all 0.2s ease-in-out;
+  }
+  .bg-custom {
+    background-color: #2c3e50 !important;
+  }
+  .text-custom {
+    color: #fff !important;
+  } 
+  /* Stile per l'icona del floppy disk */
+  td a i.fas.fa-save {
+    font-size: 25px;
+    display: block;
+    margin: auto;
+  }
+  .footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .footer h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .footer ul li {
+    padding-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #fff;
+  }
+  
+  .footer ul li a:hover {
+    color: #ccc;
+  }
+  
+  .footer ul li i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .footer ul.social li {
+    display: inline;
+    margin-right: 10px;
+  }
+  .footer ul.social li a i {
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    background-color: #444;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer ul.social li a i:hover {
+    background-color: #ccc;
+    color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .footer h5 {
+      font-size: 16px;
+    }
+    .footer ul li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  
