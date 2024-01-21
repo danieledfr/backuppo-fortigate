@@ -1,5 +1,5 @@
 # Backuppo
-## Simple platform for backup a  Fortinet FortiGate appliances through RestAPI
+## Simple platform for backup a FortiGate appliances through RestAPI
 
 
 Backuppo is a web-based application created with the simple idea ( for my needs ) of saving a FortiGate configuration using a secure method.
@@ -33,3 +33,72 @@ Anyway, if you have the same needs to me, just download and use it!
 ## Installation
 
 Installation tested on Linux Ubuntu 22.04
+
+Make sure have update the system:
+```sh
+apt update
+apt upgrade -y
+```
+
+Install the dependencies and components:
+```sh
+apt install apache2 php libapache2-mod-php php-mysql
+apt install sqlite3 php-sqlite3 dbus python3-pip libapache2-mod-python
+pip3 install requests
+```
+
+Enable apache module for run correctly a python script
+```sh
+a2enmod cgi
+```
+
+Clone repository to home folder
+```sh
+apt install git
+git clone https://github.com/danieledfr/backuppo-fortigate.git
+```
+
+
+## Configuration
+
+Move the contents into www apache folder
+```sh
+cd backuppo-fortigate/
+mv * /var/www
+```
+
+If exist html folder in /var/www then remove
+```sh
+cd /var/www
+rm -R html/ ( only if html folder are exist )
+```
+
+Modify Apache index folder
+```sh
+nano /etc/apache2/sites-enabled/000-default.conf
+modify DocumentRoot /var/www/html in /var/www
+```
+
+Make the database
+```sh
+python3 /var/www/cgi-bin/createdb.py
+```
+
+Assign a privileges for the application to write in a various folders
+```sh
+chown -R www-data:www-data /var/www
+```
+
+## Development
+
+Want to contribute? Great!
+
+## Docker
+
+Maybe one day...
+
+## License
+
+MIT
+
+**Free Software, Hell Yeah!**
