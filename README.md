@@ -28,9 +28,10 @@ Anyway, if you have the same needs to me, just download and use it!
 
 ## Tech
 
+- [Apache]
 - [PHP]
 - [Python]
-- [SQL-Lite]
+- [SQLLite]
 - [Bootstrap]
 
 ## Installation
@@ -98,6 +99,9 @@ Open your new, fresh, simple, wonderful configuration repository of your FortiGa
 ```sh
 http://yourserveripaddress/
 ```
+## Be careful
+
+This app was not designed to run on a public network, please not expose it.
 
 ## Development
 
