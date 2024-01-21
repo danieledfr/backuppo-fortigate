@@ -32,4 +32,4 @@ Anyway, if you have the same needs to me, just download and use it!
 
 ## Installation
 
-Installation tested on Ubuntu 22.04
+Installation tested on Linux Ubuntu 22.04
