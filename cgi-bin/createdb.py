@@ -5,7 +5,7 @@ def create_database_and_table():
     c = conn.cursor()
 
     c.execute('''CREATE TABLE IF NOT EXISTS devices
-                (device_name TEXT, ip_address TEXT, https_port INTEGER, token TEXT, lastbackup TEXT)''')
+                (id INTEGER PRIMARY KEY, device_name TEXT, ip_address TEXT, https_port INTEGER, token TEXT, lastbackup TEXT)''')
 
     conn.commit()
     conn.close()
