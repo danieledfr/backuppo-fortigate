@@ -55,7 +55,6 @@ pip3 install requests
 Enable apache module for run correctly a python script
 ```sh
 a2enmod cgi
-systemctl restart apache2
 ```
 
 Clone repository to home folder
