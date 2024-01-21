@@ -1,5 +1,5 @@
 # Backuppo
-## Simple platform for backup a FortiGate appliances through RestAPI
+## Simple platform for backup a  Fortinet FortiGate appliances through RestAPI
 
 
 Backuppo is a web-based application created with the simple idea ( for my needs ) of saving a FortiGate configuration using a secure method.
