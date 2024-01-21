@@ -31,3 +31,5 @@ Anyway, if you have the same needs to me, just download and use it!
 - [Bootstrap]
 
 ## Installation
+
+Installation tested on Ubuntu 22.04
