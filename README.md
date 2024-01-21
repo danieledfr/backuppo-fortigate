@@ -42,6 +42,7 @@ Make sure have update the system:
 ```sh
 apt update
 apt upgrade -y
+reboot
 ```
 
 Install the dependencies and components:
@@ -54,6 +55,7 @@ pip3 install requests
 Enable apache module for run correctly a python script
 ```sh
 a2enmod cgi
+systemctl restart apache2
 ```
 
 Clone repository to home folder
@@ -81,6 +83,7 @@ Modify Apache index folder
 ```sh
 nano /etc/apache2/sites-enabled/000-default.conf
 modify DocumentRoot /var/www/html in /var/www
+systemctl restart apache2
 ```
 
 Make the database
@@ -99,6 +102,19 @@ Open your new, fresh, simple, wonderful configuration repository of your FortiGa
 ```sh
 http://yourserveripaddress/
 ```
+
+## Know Issue
+
+If the first time you don't see anything in the Device Page, run this follow:
+
+```sh
+cd /var/www/cgi-bin
+python3 createdb.py
+```
+
+Run ls -lrt in /var/www/cgi-bin and make sure the devices.db file have more then 0B size.
+
+
 ## Be careful
 
 This app was not designed to run on a public network, please not expose it.
