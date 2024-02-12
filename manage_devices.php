@@ -102,6 +102,7 @@ $total_pages = ceil($total_devices / $limit);
         <table class="table" id="devices-table">
             <thead>
                 <tr>
+                    <th>Enable</th>
                     <th>Nome dispositivo</th>
                     <th>Indirizzo IP</th>
                     <th>Porta HTTPS</th>
@@ -123,6 +124,7 @@ $total_pages = ceil($total_devices / $limit);
             }
             ?>
             <tr class="<?php echo $rowClass; ?>">
+                <td><input type="checkbox" class="enable-checkbox" data-id="<?php echo $row['id']; ?>" <?php echo $row['enable'] ? 'checked' : ''; ?>></td>
                 <td><?php echo htmlspecialchars($row['device_name']); ?></td>
                 <td><?php echo htmlspecialchars($row['ip_address']); ?></td>
                 <td><?php echo htmlspecialchars($row['https_port']); ?></td>
@@ -172,6 +174,30 @@ $total_pages = ceil($total_devices / $limit);
     </div>
   </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('.enable-checkbox').change(function() {
+            const deviceId = $(this).data('id');
+            const enable = $(this).prop('checked') ? 1 : 0;
+
+            // Invia il nuovo valore al server tramite AJAX
+            $.ajax({
+                url: 'update_enable.php',
+                method: 'POST',
+                data: { id: deviceId, enable: enable },
+                success: function(response) {
+                    // Aggiorna la pagina o effettua altre azioni necessarie
+                    console.log(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
 
 <script>
     $(document).ready(function() {
