@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h7>Backuppo v1.0.0 (beta)</h7>
+        <h7>Backuppo v1.0.1 (beta)</h7>
         </ul>
       </div>
     </div>
